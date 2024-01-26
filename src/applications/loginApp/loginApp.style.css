@@ -1,0 +1,18 @@
+form {
+  width: 40%;
+  min-height: 300px;
+  border: 1px solid black;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  text-align: start;
+}
+
+input {
+  padding: 5px 0;
+}
+
+button {
+}

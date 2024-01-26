@@ -1,6 +1,6 @@
 import React from "react";
 import "./message.style.css";
-import { FcApproval, InfoIcon, FcDisclaimer } from "react-icons/fc";
+import { FcApproval, FcInfo, FcDisclaimer } from "react-icons/fc";
 
 const Message = ({ type, children }) => {
   const showIcon = () => {
@@ -9,13 +9,13 @@ const Message = ({ type, children }) => {
     } else if (type === "success") {
       return <FcApproval />;
     } else if (type === "info") {
-      return <InfoIcon />;
+      return <FcInfo />;
     }
   };
 
   return (
     <div className={`message-container ${type}`}>
-      {/* <FcApproval /> */}
+      {showIcon()}
       <p>{children}</p>
     </div>
   );
